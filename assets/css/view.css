@@ -1,0 +1,7 @@
+div#ui-view {
+    /*background: #f8f8f8;*/
+}
+div#ui-view {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,37 @@
+<form>
+  <!-- Location -->
+  <div class="form-group col-lg-3 col-md-3 col-sm-9">
+    <md-input-container >
+      <input required placeholder="Location" ng-model="vm.sales.location.formattedAddress" ng-autocomplete details="vm.sales.location" id="address" name="address" type="text" />
+    </md-input-container>
+  </div>
+  <!-- Radius -->
+  <div  class="form-group col-lg-3 col-md-3 col-sm-9">
+    <md-input-container>
+      <label>Distance</label>
+      <md-select ng-model="vm.sales.distance" class="md-primary">
+        <md-option ng-value="opt" ng-repeat="opt in vm.filter.options.miles">{{ opt }}</md-option>
+      </md-select>
+    </md-input-container>
+  </div>
+  <div class="form-group col-lg-2 col-md-2 col-sm-4">
+    <!-- Min Price -->
+    <label>Min Price <span class="pull-right">{{vm.sales.min_price | currency : '&pound;' : 0}}</span></label>
+    <md-slider ng-model="vm.sales.min_price" min="0" max="3000000" class="md-primary" step="1000"></md-slider>
+  </div>
+  <div class="form-group col-lg-2 col-md-2 col-sm-4">
+    <!-- Max Price -->
+    <label>Max Price <span class="pull-right">{{vm.sales.max_price | currency : '&pound;' : 0}}</span></label>
+    <md-slider ng-model="vm.sales.max_price" min="1000" max="3000000" class="md-primary" step="1000"></md-slider>
+  </div>
+  <!-- Beds -->
+  <div class="form-group col-lg-2 col-md-23 col-sm-9">
+    <md-input-container>
+      <label>Bedrooms</label>
+      <md-select ng-model="vm.sales.min_beds" class="md-primary">
+        <md-option ng-value="opt" ng-repeat="opt in vm.filter.options.beds">{{ opt }}</md-option>
+      </md-select>
+    </md-input-container>
+  </div>
+  <md-button class="md-primary pull-right" ng-click="vm.search(vm.sales)">Search</md-button>
+</form>

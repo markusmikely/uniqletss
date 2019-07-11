@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="" name="description">
+  <meta content="Markus J Mikely" name="author">
+  <title>Uniqletts</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="icon" type="image/x-icon" id="favicon" href="assets/img/favicon.ico">  
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!-- jQUery & bootstrap  -->
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Angular JS Library Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js">
+  <!-- Angular Material Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.1.0/angular-cookie.min.js"></script>
+  <script src="assets/js/ng-responsive-image.min.js"></script>
+  <script src="assets/js/picturefill.min.js"></script>
+  <script src="assets/js/angular-picture.js"></script>
+
+  <script src="assets/js/ng-map.debug.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLK8Nr2-p_8GjuaJLWR6mCqDeQH_4wuSI&libraries=places"></script>
+  <!-- Angular Services -->
+  <script src="app/services/page.service.js"></script>
+  <script src="app/services/contact.service.js"></script>
+  <script src="app/services/api.service.js"></script>
+  <script src="app/services/property.service.js"></script>
+  <script src="app/services/review.service.js"></script>
+  <script src="app/services/wishlist.service.js"></script>
+  <!-- Angular Controllers -->
+  <script src="app/components/layout/header/header.controller.js"></script>
+  <script src="app/components/contact/contact.controller.js"></script>
+  <script src="app/components/home/home.controller.js"></script>
+  <script src="app/components/sales/sales.controller.js"></script>
+  <script src="app/components/lettings/lettings.controller.js"></script>
+  <script src="app/components/property/property.controller.js"></script>
+  <script src="app/components/about/about.controller.js"></script>
+  <script src="app/components/terms/terms.controller.js"></script>
+  <script src="app/components/management/management.controller.js"></script>
+  <script src="app/components/privacy/privacy.controller.js"></script>
+  <script src="app/components/cookies/cookies.controller.js"></script>
+  <script src="app/components/property-alerts/property-alerts.controller.js"></script>
+  <script src="app/components/property-valuation/property-valuation.controller.js"></script>
+  <script src="app/components/reviews/reviews.controller.js"></script>
+  <script src="app/components/wishlist/wishlist.controller.js"></script>
+  <!-- Directives -->
+  <script src="app/directives/pagination.directive.js"></script>
+  <script src="app/directives/ngAutocomplete.js"></script>
+  <!-- App Files -->
+  <script src="app/run.js"></script>
+  <script src="app/config.js"></script>
+  <script src="app/app.js"></script>
+</head>
+<body ng-app="uniqlettsApp">
+  <!-- Header -->
+  <div ng-include src="'app/components/layout/header/header.view.htm'"></div>
+  <!-- Content -->
+  <div id="ui-view" ui-view autoscroll="true"></div>
+  <!-- Footer -->
+  <div id="footer-wrapper" ng-include src="'app/components/layout/footer/footer.view.htm'"></div>
+<!-- Wishlist {{wishlist}} -->
+</body>
+</html>

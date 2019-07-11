@@ -1,0 +1,93 @@
+section#about-introduction p {
+  text-align: center;
+  font-size: 18px !important;
+  line-height: 1.7;
+}
+
+#about-us p {
+  font-size: 18px;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+#about-us ul li {
+  list-style:none;
+  position:relative;
+}
+#about-us ul li:before {
+  content:'';
+  height:20px;
+  width:20px;
+  position:absolute;
+  left: -36px;
+  top: 7px;
+  display:block;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwNC41MDIsNzUuNDk2Yy05Ljk5Ny05Ljk5OC0yNi4yMDUtOS45OTgtMzYuMjA0LDBMMTYxLjU5NCwzODIuMjAzTDQzLjcwMiwyNjQuMzExYy05Ljk5Ny05Ljk5OC0yNi4yMDUtOS45OTctMzYuMjA0LDAgICAgYy05Ljk5OCw5Ljk5Ny05Ljk5OCwyNi4yMDUsMCwzNi4yMDNsMTM1Ljk5NCwxMzUuOTkyYzkuOTk0LDkuOTk3LDI2LjIxNCw5Ljk5LDM2LjIwNCwwTDUwNC41MDIsMTExLjcgICAgQzUxNC41LDEwMS43MDMsNTE0LjQ5OSw4NS40OTQsNTA0LjUwMiw3NS40OTZ6IiBmaWxsPSIjOTFEQzVBIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+  background-size: contain;
+}
+#about-us ul li h4 {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 15px 0;
+}
+section#about-services .card {
+  position: relative;
+}
+section#about-services .card h4 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  float: none;
+}
+.bg-white,.title {
+    background: white;
+    padding: 40px 0;
+}
+
+.bg-transparent-lightblue {
+    background: rgba(113, 168, 208, .8);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+.bg-transparent-darkblue {
+    background: rgba(65, 123, 193, .8);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.bg-transparent-lightblue h1,
+.bg-transparent-lightblue h2,
+.bg-transparent-darkblue h2 {
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+.bg-transparent-lightblue p {
+    margin: 0;
+    font-size: 20px;
+}
+section#about-abroad p,
+section#about-policy p,
+section#about-contact p {
+    font-size: 18px;
+    letter-spacing: 0;
+    margin: 0 0 16px;
+    text-align: center;
+}
+#about-contact a {
+  margin: 20px auto 0;
+}
+#about-contact {
+  border-bottom:1px solid #eee;
+}

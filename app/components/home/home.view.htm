@@ -1,0 +1,15 @@
+<div ng-if="vm.loading" ng-include src="'app/components/parts/loader.view.htm'"></div>
+<div ng-if="!vm.loading">
+  <!-- Slider -->
+  <div ng-include src="'app/components/parts/slider.view.htm'"></div>
+  <!-- Banner -->
+  <!-- <div ng-include src="'app/components/parts/banner.view.htm'"></div> -->
+  <!-- Search -->
+  <div id="search-view" ng-include src="'app/components/parts/search.view.htm'"></div>
+  <!-- Features -->
+  <div ng-include src="'app/components/parts/features.view.htm'"></div>
+  <!-- Reviews -->
+  <div ng-include src="'app/components/parts/reviews.view.htm'"></div>
+  <!-- Valuation Box -->
+  <div ng-include src="'app/components/parts/valuation-box.view.htm'"></div>
+</div>

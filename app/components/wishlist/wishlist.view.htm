@@ -1,0 +1,87 @@
+<style>
+  section#wishlist {
+      padding: 0 20px 20px;
+      max-width: 500px;
+      width: 500px;
+  }
+
+  section#wishlist h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    background: #FFD700;
+    margin: 0 -20px 20px;
+    padding: 15px 0;
+    font-weight: 400;
+
+  }
+</style>
+<section id="wishlist" ng-controller="WishlistController as vm">
+  <h1>Request a viewing</h1>
+  <div ng-if="vm.showMessage" class="alert alert-success">{{vm.message}}</div>
+  <form name="form" novalidate ng-submit="vm.sendMessage(form)" role="form">
+    <div class="col-lg-12">
+      <md-input-container>
+        <input name="name" id="name" type="text" placeholder="Name" ng-model="vm.contact.name" required />
+        <div ng-if="form.name.$touched && form.name.$invalid" class="error messages">
+          Please enetr you full name
+        </div>
+      </md-input-container>
+    </div>
+    <div class="col-lg-12">
+      <md-input-container>
+        <input name="email" id="email" placeholder="Email" type="email" ng-model="vm.contact.email" ng-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" required/>
+        <div ng-if="form.email.$touched && form.email.$invalid" class="error messages">
+          Please enter your email in the format e.g. joebloggs@mail.com
+        </div>
+      </md-input-container>
+    </div>
+    <div class="col-lg-12">
+      <md-input-container>
+        <input name="phone" id="phone" placeholder="Contact" type="text" ng-model="vm.contact.phone" ng-pattern="/^\d+$/" required />
+        <div ng-if="form.phone.$touched && form.phone.$invalid" class="error messages">
+          Please enter a valid contact number
+        </div>
+      </md-input-container>
+    </div>
+    <div class="col-lg-12">
+      <md-input-container>
+        <input name="occupation" id="occupation" placeholder="Occupation" type="text" ng-model="vm.contact.occupation" required />
+        <div ng-if="form.occupation.$touched && form.occupation.$invalid" class="error messages">
+          Please enter a your occupation
+        </div>
+      </md-input-container>
+    </div>
+    <div class="col-lg-12">
+      <md-input-container>
+        <label>How many people are you looking for?</label>
+        <md-slider md-discrete name="people" id="people" type="number" placeholder="How many people are you looking for?" ng-model="vm.contact.people" required step="10" min="1" max="20"></md-slider>
+        <div ng-if="form.people.$touched && form.people.$invalid" class="error messages">
+          This is required
+        </div>
+      </md-input-container>
+    </div>
+    <div class="col-lg-6">
+      <md-input-container>
+          <label>Viewing Date</label>
+        <md-datepicker md-hide-icons="calendar" name="viewing" id="viewing" type="date" placeholder="Viewing Date" ng-model="vm.contact.viewing" required></md-datepicker>
+        <div ng-if="form.viewing.$touched && form.viewing.$invalid" class="error messages">
+          This is required
+        </div>
+      </md-input-container>
+    </div>
+    <div class="col-lg-6">
+      <md-input-container>
+        <label>Move In Date</label>
+        <md-datepicker md-hide-icons="calendar" name="move" id="move" placeholder="Move In Date" type="date" ng-model="vm.contact.move" required></md-datepicker>
+        <div ng-if="form.move.$touched && form.move.$invalid" class="error messages">
+          This is required
+        </div>
+      </md-input-container>
+
+    </div>
+    <md-button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary" >
+      Send Message<img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+    </md-button>
+  </form>
+</section>

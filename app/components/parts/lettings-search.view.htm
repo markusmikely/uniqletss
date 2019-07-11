@@ -1,0 +1,38 @@
+<form>
+  <!-- Location -->
+  <div class="form-group col-lg-3 col-md-3 col-sm-9">
+    <label>Lettings</label>
+    <md-input-container>
+      <input required ng-model="vm.lettings.location.formattedAddress" ng-autocomplete details="vm.lettings.location" id="address" name="address" type="text" />
+    </md-input-container>
+  </div>
+  <!-- Radius -->
+  <div  class="form-group col-lg-3 col-md-3 col-sm-9">
+    <md-input-container>
+      <label>Distance</label>
+      <md-select ng-model="vm.lettings.distance" class="md-primary">
+        <md-option ng-value="opt" ng-repeat="opt in vm.filter.options.miles">{{ opt }}</md-option>
+      </md-select>
+    </md-input-container>
+  </div>
+  <div class="form-group col-lg-2 col-md-2 col-sm-4">
+    <!-- Min Price -->
+    <label>Min Price <span class="pull-right">{{vm.lettings.min_price | currency : '&pound;' : 0}}</span></label>
+    <md-slider ng-model="vm.lettings.min_price" min="0" max="10000" class="md-primary" step="5"></md-slider>
+  </div>
+  <div class="form-group col-lg-2 col-md-2 col-sm-4">
+    <!-- Max Price -->
+    <label>Max Price <span class="pull-right">{{vm.lettings.max_price | currency : '&pound;' : 0}}</span></label>
+    <md-slider ng-model="vm.lettings.max_price" min="0" max="10000" class="md-primary" step="5"></md-slider>
+  </div>
+  <!-- Beds -->
+  <div class="form-group col-lg-2 col-md-23 col-sm-9">
+    <md-input-container>
+      <label>Bedrooms</label>
+      <md-select ng-model="vm.lettings.min_beds" class="md-primary">
+        <md-option ng-value="opt" ng-repeat="opt in vm.filter.options.beds">{{ opt }}</md-option>
+      </md-select>
+    </md-input-container>
+  </div>
+  <md-button class="md-primary pull-right" ng-click="vm.search(vm.lettings)">Search</md-button>
+</form>

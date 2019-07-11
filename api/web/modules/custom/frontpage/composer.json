@@ -1,0 +1,14 @@
+{
+  "name": "drupal/frontpage",
+  "type": "drupal-module",
+  "description": "This module will provide an end point for the homepage and the controller poviding the data",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/frontpage",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/frontpage",
+    "source": "http://cgit.drupalcode.org/frontpage"
+  },
+  "require": { }
+}

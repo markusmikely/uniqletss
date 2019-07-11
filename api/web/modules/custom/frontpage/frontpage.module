@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains frontpage.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function frontpage_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the frontpage module.
+    case 'help.page.frontpage':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module will provide an end point for the homepage and the controller poviding the data') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function frontpage_theme() {
+  return [
+    'frontpage' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains uniqletts_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uniqletts_api_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uniqletts_api module.
+    case 'help.page.uniqletts_api':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module will provide the API endpoints for the Uniqletts Property App') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function uniqletts_api_theme() {
+  return [
+    'uniqletts_api' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,74 @@
+/* Banner */
+section#banner {
+    background: #5a5a5a;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+section#banner p {
+    margin: 0;
+    font-size: 20px;
+}
+/* Features */
+section#features {
+    background: #e7eef1;
+    padding: 40px 0;
+}
+#features h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+section#hero {
+    padding: 40px 0;
+    text-align: center;
+    background: rgba(62, 124, 194, .7);
+    color: white;
+}
+section#hero .md-button.md-primary {
+    background: white;
+    color: #121212;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+section#hero .md-button:not([disabled]):hover {
+    background-color: rgb(126, 177, 213);
+    color: white;
+}
+.card h4 ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 10px  10px 0;
+}
+.card h4 ul li {
+    font-size: 16px;
+    font-weight: bold;
+}
+.card h4 i.icon {
+  top: 4px;
+  width: 20px;
+  position: relative;
+  height: 20px;
+}
+.card h4 i.icon.icon-bedroom {
+    background-image: url(../img/bedroom-white.svg);
+}
+.card h4 i.icon.icon-bathroom {
+    background-image: url(../img/bathroom-white.svg);
+}
+@media(max-width:768px) {
+    h2 {
+        font-size: 26px;
+        margin: 10px 0;
+        line-height: 1.4;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 1.4;
+        margin: 16px 0;
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/uniqletts_api",
+  "type": "drupal-module",
+  "description": "This module will provide the API endpoints for the Uniqletts Property App",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/uniqletts_api",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/uniqletts_api",
+    "source": "http://cgit.drupalcode.org/uniqletts_api"
+  },
+  "require": { }
+}

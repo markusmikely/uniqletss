@@ -1,0 +1,550 @@
+@import "common.css";
+@import "icon.css";
+@import "image.css";
+@import "form.css";
+@import "property-card.css";
+@import "carousel.css";
+@import "header.css";
+@import "footer.css";
+@import "view.css";
+@import "homepage.css";
+@import "reviews.css";
+@import "loader.css";
+@import "angular-material.min.css";
+@import "material.min.css";
+@import "reviews.css";
+@import "valuation.css";
+@import "about.css";
+@import "single-property.css";
+@import "privacy.css";
+
+a:hover, a:focus {
+  color: #0099fa;
+  text-decoration: none;
+}
+#features .property-price {
+  padding: 13px 20px;
+}
+#features .property-price {
+  padding: 13px 20px;
+}
+span.distance {
+  color: #eaba08;
+  font-size: 16px;
+}
+ul#feature-toggle li button:hover,
+ul#feature-toggle li button.active {
+  color: white;
+  background-color: rgb(0, 119, 193);
+}
+
+ul#feature-toggle li button {
+    transition: all linear .3s;
+}
+a {
+    color: #121212;
+    transition: all linear .3s;
+    text-decoration: none;
+}
+nav#main-navbar a {
+    padding: 20px 15px;
+}
+#quick-links .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+#quick-links .navbar-nav {
+    margin: 0 !important;
+}
+a {
+    color: #121212;
+}
+
+nav#main-navbar a {
+
+      font-size: 12px;
+      padding: 5px 15px;
+      border-radius: 20px;
+      transition: all linear .3s;
+}
+
+
+#quick-links .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+#quick-links .navbar-nav {
+    margin: 0;
+}
+
+#quick-links i {
+    float: left;
+}
+
+
+.carousel img {
+    width:auto;
+    height: 100% !important;
+    margin: 0 auto;
+}
+
+
+.carousel .item .carousel-caption h2 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-size:40px;
+    font-weight:500;
+    margin-bottom: 80px;
+    margin-top: 120px;
+}
+button.btn.btn-primary {
+    border-radius:20px;
+    padding:5px 20px;
+    background:#0099fa;
+}
+
+div.radio {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    margin-left: 5px;
+}
+
+.form-group.col-lg-4 {
+    padding: 0;
+}
+
+.form-group.col-lg-2 {
+    padding: 0 0 0 10px;
+}
+#search-view {
+      background: #edf5fb;
+}
+section#search {
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+    position: relative;
+}
+p {
+    font-size: 16px;
+    letter-spacing: 0;
+    margin: 0 0 16px;
+}
+label {
+  width:100%;
+}
+.form-control {
+    background: #f8f8f8 !important;
+}
+
+section#features {
+  background: #ecf5fb;
+  padding: 40px 50px;
+}
+
+section#features img {
+    max-width: 100%;
+}
+#quick-links i {
+    float: left;
+}
+
+section.contact form md-input-container {
+    width: 100%;
+}
+
+div#property-filter {
+    background: #92c7e2;
+    color: white;
+    height: 40px;
+}
+
+div#property-filter .form-control,div#property-filter .form-group {
+    margin: 0;
+}
+.item {
+  height: 700px;
+  overflow: hidden;
+  display: block;
+}
+div#property-filter input {
+    height: 40px;
+    border-radius: 0;
+    background: transparent !important;
+    border: none;
+    border-right: 1px solid white;
+    color: white;
+}
+
+
+
+div#property-filter .col-lg-2 {
+    padding: 0;
+}
+
+a {
+    color: #121212;
+}
+
+#quick-links .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+section.listing {
+    height: 100% !important;
+}
+
+
+section.listing > .container {
+    height: calc(100% - 40px);
+}
+#quick-links .navbar-nav {
+    margin: 0;
+}
+
+#quick-links i {
+    float: left;
+}
+md-tabs md-ink-bar {
+    color:#71a8d0;
+    background-color:#83b4d7;
+}
+
+md-tabs .md-tab:active .md-ripple-container {
+  background-color: rgba(90, 132, 186, .1);
+}
+
+md-tabs .md-tab .md-ripple-container .md-ripple {
+  background: #6ea7cf;
+  border-color: #80b1d6;
+}
+md-tabs md-ink-bar {
+    color:#71a8d0;
+    background-color:#83b4d7;
+}
+
+md-tabs .md-tab:active .md-ripple-container {
+  background-color: rgba(90, 132, 186, .1);
+}
+
+md-tabs .md-tab .md-ripple-container .md-ripple {
+  background: #6ea7cf;
+  border-color: #80b1d6;
+}
+
+md-input-container label:not(.md-no-float):not(._md-container-ignore) {
+    font-weight: 400;
+}
+
+md-tab-content {
+    padding: 20px;
+}
+
+label {
+    font-weight: 400;
+    color: #959595;
+}
+
+label span {
+    font-weight: 600;
+}
+
+md-slider.md-default-theme .md-track, md-slider .md-track {
+    background: #eee;
+}
+section.contact {
+    background: rgba(255,255,255,.7);
+}
+
+section.contact .container {
+    background: white;
+    padding:50px;
+}
+
+section.contact form {
+    padding-bottom: 70px;
+}
+section.listing {
+    background: rgba(255,255,255,.7);
+}
+section.listing, section.listing .container {
+    min-height: 740px;
+}
+
+section.listing {
+    background: rgba(255,255,255,.7);
+}
+section.listing {
+    height: 100% !important;
+    min-height: 740px;
+}
+div#ui-view {
+    min-height: calc(100% - 127px);
+}
+html {
+  height: 100%;
+  background: url(http://msq.digital/uniqletts/api/web/sites/default/files/2018-12/Perks-of-London-Property.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  background: transparent;
+}
+
+section.transparent-title {
+    background: rgba(59, 121, 191, .7);
+    color: white;
+    padding:40px 0;
+    text-align: center;
+}
+#property-valuation {
+    background: #edf5fb;
+}
+section.transparent-title h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.carousel .item .carousel-caption h2 {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+button.btn.btn-primary {
+    border-radius: 20px;
+    padding: 0px 20px;
+    background: #4382c9;
+    border-color: #4382c9;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 10px;
+    clear: both;
+    color: white;
+    float: right;
+}
+
+div.radio {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    margin-left: 5px;
+}
+
+.form-group.col-lg-4 {
+    padding: 0;
+}
+
+.form-group.col-lg-2 {
+    padding: 0 0 0 10px;
+}
+
+section#search {
+    background: white;
+border-bottom: 1px solid #e0e0e0;
+}
+
+.form-control {
+    background: #f8f8f8 !important;
+}
+
+section#features {
+    background: #ecf5fb;
+}
+
+section#features img {
+    max-width: 100%;
+}
+
+
+@media (max-width:990px) {
+  .carousel .item .carousel-caption h2 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width:768px) {
+  section#banner p {
+    font-size: 14px;
+  }
+  .carousel-control span.glyphicon {
+    background-image: url(../img/chevron.svg);
+    background-size: cover;
+    font-family: arial;
+    text-indent: 1000000px;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+}
+  .carousel .item .carousel-caption h2 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+  #main-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 280px; /*example + never use min-width with this solution */
+    height: 100%;
+  }
+  nav#main-navbar .navbar-nav {
+    float: none !important;
+    margin: 0;
+    width: 280px;
+  }
+
+  nav#main-navbar li a {
+      border-bottom: 1px solid #efefef;
+      border-radius: 0;
+  }
+
+  #quick-links .navbar-nav>li>a i {
+      display: none;
+  }
+
+  #quick-links .navbar-nav>li>a {
+      text-align: left;
+      padding: 10px 15px !important;
+  }
+  nav#main-navbar {
+      padding: 0;
+      background: white;
+      box-shadow: 1px 0px 2px rgba(0,0,0,0.3);
+      text-align: left;
+      width:280px;
+      left:-280px;
+      display: block;
+      transition:all linear .3s;
+  }
+  nav#main-navbar.open {
+      padding: 0;
+      background: white;
+      box-shadow: 1px 0px 2px rgba(0,0,0,0.3);
+      text-align: left;
+      width:280px;
+      left:0;
+  }
+  span.back-drop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.2);
+      display:none;
+      opacity:0;
+      transition: all linear .3s;
+  }
+  span.back-drop.show {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.2);
+      display:block;
+      opacity:1;
+  }
+  section#features {
+    padding: 40px 0;
+}
+
+#features h2 {
+    line-height: 26px;
+}
+
+.propery-bg {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.col-lg-6.valuation-ad {
+    width: 100%;
+}
+
+section#search {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.navbar-nav>li {
+    display: block;
+    float: none;
+    padding: 0;
+}
+
+nav#main-navbar li a {
+    padding: 10px 15px;
+}
+}
+
+.slide-image {
+  width:100%;
+  height:450px;
+}
+@media(max-width:768px) {
+    .media-left {
+        width:100%;
+        display:block;
+        clear:both;
+        float:none;
+        margin-bottom:20px;
+    }
+    .media-left img {
+        width:100%;
+        height:auto;
+    }
+    .media-body {
+        width:100%;
+        clear:both;
+        float:none;
+    }
+    div#property-filter {
+        height: auto;
+        background:white;
+    }
+    div#property-filter form div {
+        border-bottom:1px solid #eee;
+        backgroud:white;
+}
+
+@media(min-width:767px) {
+  .slide-image {
+    width:100%;
+    height:450px;
+  }
+}
+@media(min-width:991px) {
+  .slide-image {
+    width:100%;
+    height:450px;
+  }
+}
+@media(min-width:1200px) {
+  .slide-image {
+    width:100%;
+    height:450px;
+  }
+}

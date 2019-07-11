@@ -1,0 +1,127 @@
+<section class="bg-transparent-darkblue">
+  <div class="container">
+    <div class="row">
+      <dv >
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p>If you would like us to contact you, please use the form below to submit your request.</p>
+        <p>If you would like to register your property requirements with us or be added to our mailing list you can do this via our registration form.</p>
+        <hr>
+      </div>
+      <div class="col-lg-12 text-center">
+        <h4>Uniqletts Limited</h4>
+        <address>
+          <ul class="list-unstyled">
+            <li>Suite 14</li>
+            <li>23 Redan Place</li>
+            <li>Bayswater, W2 4SA.</li>
+            <li>Tel: <a href="tel:+442072214000">0207 221 4000</a></li>
+            <li>E-mail: <a href="mailto:info@uniqletts.com">info@uniqletts.com</a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="col-lg-12 text-center">
+        <h4>Office Hours</h4>
+        <ul class="list-unstyled">
+          <li>Monday to Friday : 9am to 6pm</li>
+          <li>Viewings hours : 9am to 7:30pm</li>
+          <li>Saturday viewings hours : 10am to 4pm</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-lg-offset-3">
+        <div ng-if="vm.message" class="bg-success">
+          {{vm.message}}
+        </div>
+        <form name="form" novalidate ng-submit="vm.sendMessage(form)" role="form">
+          <div class="col-lg-12">
+          <md-input-container>
+              <input name="name" id="name" placeholder="Name" type="text" ng-model="vm.contact.name" required />
+              <div ng-if="form.name.$touched && form.name.$invalid" class="error messages">
+                Please enetr you full name
+              </div>
+            </md-input-container>
+            </div>
+            <div class="col-lg-12">
+            <md-input-container>
+              <input name="email" id="email" placeholder="Email" type="email" ng-model="vm.contact.email" required ng-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" />
+              <div ng-if="form.email.$touched && form.email.$invalid" class="error messages">
+                Please enter your email in the format e.g. joebloggs@mail.com
+              </div>
+            </md-input-container>
+            </div>
+            <div class="col-lg-12">
+            <md-input-container>
+              <input name="phone" id="phone" placeholder="Contact" type="text" ng-model="vm.contact.phone" ng-pattern="/^\d+$/" required />
+              <div ng-if="form.phone.$touched && form.phone.$invalid" class="error messages">
+                Please enter a valid contact number
+              </div>
+            </md-input-container>
+            </div>
+            <div class="col-lg-12">
+            <md-input-container>
+              <textarea name="message" id="message" placeholder="Message" ng-model="vm.contact.message" required ></textarea>
+              <div ng-if="form.message.$touched && form.message.$invalid" class="error messages">
+                Please enter a message
+              </div>
+            </md-input-container>
+          </div>
+          <div class="col-lg-12">
+            <md-input-container>
+              <md-select name="source" placeholder="How you found out about us?" id="source" ng-model="vm.contact.source" required>
+                <md-option selected value="Word of mouth">Word of mouth</md-option>
+                <md-option value="Google">Google</md-option>
+                <md-option value="Blog">Blog</md-option>
+                <md-option value="Online Ads">Online Ads</md-option>
+                <md-option value="Social">Social</md-option>
+              </md-select>
+              <div ng-if="form.source.$touched && form.source.$invalid" class="error messages">
+                Please let us know how you found out about us
+              </div>
+            </md-input-container>
+          </div>
+          <div class="col-lg-6">
+            <label>Add to mailing lists</label>
+            <md-input-container>
+              <md-radio-group name="mailing-list" ng-model="vm.contact.mailing">
+                <md-radio-button value="yes" aria-label="Yes">
+                  Yes
+                </md-radio-button>
+                <md-radio-button value="no" aria-label="No">
+                  No
+                </md-radio-button>
+              </md-radio-group>
+            </md-input-container>
+          </div>
+          <div class="col-lg-6">
+            <label>Recieive marketing materials</label>
+            <md-input-container>
+              <md-radio-group name="mailing-list" ng-model="vm.contact.marketing">
+                <md-radio-button value="yes" aria-label="Yes">
+                  Yes
+                </md-radio-button>
+                <md-radio-button value="no" aria-label="No">
+                  No
+                </md-radio-button>
+              </md-radio-group>
+            </md-input-container>
+          </div>
+
+          <md-button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary" >
+            Send Message<img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+          </md-button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8853867447083!2d-0.19181178456011905!3d51.51531867963648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876100022701b21%3A0xbd1dca24a0a7997!2s14%2C+23+Redan+Pl%2C+London+W2+4SA!5e0!3m2!1sen!2suk!4v1538366609084" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="map-overlay"></div>
+  </div>
+</section>

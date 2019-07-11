@@ -1,0 +1,13 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+.clearfix {
+    clear: both;
+}
+.center {
+    margin: 0 auto;
+    width: auto;
+    float: none;
+    text-align: center;
+    display: inline-block;
+}

@@ -1,0 +1,24 @@
+<!-- Header -->
+<header id="header" >
+  <!-- Logo -->
+  <a ui-sref="home" class="navbar-brand">
+    <img src="assets/img/logo.png" />
+  </a>
+  <button aria-controls="main-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#main-navbar" data-toggle="slide-collapse" type="button" ng-init="vm.menu" ng-click="vm.menu = !vm.menu">
+    <i class="material-icons">menu</i>
+  </button>
+  <div class="visible-xs clearfix"></div>
+  <!-- Main menu -->
+  <span class="back-drop ng-hide-animate" ng-click="vm.menu = !vm.menu" ng-show="vm.menu" ng-class="{'show': vm.menu}"></span>
+  <nav class="collapse navbar-collapse" id="main-navbar"  ng-class="{'open':vm.menu}">
+      <ul class="nav navbar-nav pull-right">
+        <li><a ui-sref="about" ng-click="vm.menu = !vm.menu">About</a></li>
+        <li><a ui-sref="sales" ng-click="vm.menu = !vm.menu">Sales</a></li>
+        <li><a ui-sref="lettings" ng-click="vm.menu = !vm.menu">Lettings</a></li>
+        <li><a ui-sref="management" ng-click="vm.menu = !vm.menu">Management</a></li>
+        <li><a ui-sref="block-management" ng-click="vm.menu = !vm.menu">Block Management</a></li>
+        <li><a ui-sref="contact" ng-click="vm.menu = !vm.menu">Contact</a></li>
+      </ul>
+  </nav>
+
+</header>

@@ -1,0 +1,42 @@
+uniqletts_api.contact_get:
+  path: '/api/contact'
+  defaults:
+    _controller: '\Drupal\uniqletts_api\Controller\ContactAPIController::get'
+    _title: 'Send Contact Message'
+  methods:  [GET]
+  requirements:
+    _permission: 'access content'
+
+uniqletts_api.page_get:
+  path: '/api/page'
+  defaults:
+    _controller: '\Drupal\uniqletts_api\Controller\PageAPIController::get'
+    _title: 'Get Page'
+  methods:  [GET]
+  requirements:
+    _permission: 'access content'
+
+uniqletts_api.property_get:
+  path: '/api/property'
+  defaults:
+    _controller: '\Drupal\uniqletts_api\Controller\PropertyAPIController::get'
+    _title: 'Get Property'
+  methods:  [GET]
+  requirements:
+    _permission: 'access content'
+
+uniqletts_api.review_get:
+  path: '/api/review'
+  defaults:
+    _controller: '\Drupal\uniqletts_api\Controller\ReviewAPIController::get'
+    _title: 'Reviews'
+  requirements:
+    _permission: 'access content'
+
+uniqletts_api.review_post:
+  path: '/api/review'
+  defaults:
+    _controller: '\Drupal\uniqletts_api\Controller\ReviewAPIController::post'
+    _title: 'Add Review'
+  requirements:
+    _permission: 'access content'

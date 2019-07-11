@@ -1,0 +1,101 @@
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 5px;
+  POSITION: relative;
+  top: 3px;
+}
+.icon-small {
+  width:16px;
+  height:16px;
+}
+.icon-large {
+  width:32px;
+  height:32px;
+}
+.icon-calculator {
+  background-image:url(../img/calculator.svg);
+}
+.icon-review {
+  background-image:url(../img/review.svg);
+}
+.icon-heart {
+  background-image:url(../img/heart.svg);
+}
+.icon-property-alerts {
+  background-image:url(../img/house.svg);
+}
+.icon-search {
+    background-image: url(../img/search.svg);
+    margin-left: 4px;
+    margin-right: -6px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+}
+.icon-whatsapp {
+  background-image: url(../img/whatsapp.svg);
+}
+.icon-linkedin {
+  background-image: url(../img/linkedin.svg);
+}
+.icon-twitter  {
+  background-image: url(../img/twitter.svg);
+}
+.icon-instagram {
+  background-image: url(../img/instagram.svg);
+}
+.icon-facebook {
+  background-image: url(../img/facebook.svg);
+}
+.icon-bedroom {
+  background-image: url(../img/bedroom.svg);
+}
+.icon-star {
+  background-image: url(../img/star.svg);
+}
+.icon-bathroom {
+  background-image: url(../img/bathroom.svg);
+}
+.favourite a, .favourite a * {
+    transition: all linear .3s;
+}
+.favourite a:hover svg * {
+    fill: #2973ba;
+}
+.favourite a:hover, .favourite.in-wishlist a  {
+    border-color: #2973ba;
+}
+div#quick-links ul li a:hover,div#quick-links ul li a:focus {
+    background: transparent;
+    color: #0077c0;
+}
+
+a:hover .icon-review,a:focus a:hover .icon-review {
+    background-image: url(../img/review-hover.svg);
+}
+a:hover i.icon.icon-property-alerts,a:focus a:hover i.icon.icon-property-alerts {
+    background-image: url(../img/house-hover.svg);
+}
+a:hover i.icon.icon-calculator,a:focus a:hover i.icon.icon-calculator {
+    background-image: url(../img/calculator-hover.svg);
+}
+.md-button.md-default-theme:not([disabled]).md-focused, .md-button:not([disabled]).md-focused, .md-button.md-default-theme:not([disabled]):hover, .md-button:not([disabled]):hover {
+    background-color: rgb(0, 119, 193);
+}
+.carousel-control span.glyphicon {
+    background-image: url(../img/chevron.svg);
+    background-size: cover;
+    font-family: arial;
+    text-indent: 100px;
+    overflow: hidden;
+}
+.carousel-control span.glyphicon.glyphicon-chevron-left {
+    transform: rotate(180deg);
+    display: block;
+}
