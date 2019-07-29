@@ -1,0 +1,63 @@
+uuid: 8e898aca-c712-4c9d-872c-cec0708bed36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.review.field_contact
+    - field.field.node.review.field_email
+    - field.field.node.review.field_firstname
+    - field.field.node.review.field_lastname
+    - field.field.node.review.field_review
+    - node.type.review
+  module:
+    - text
+    - user
+id: node.review.default
+targetEntityType: node
+bundle: review
+mode: default
+content:
+  field_contact:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_firstname:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lastname:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_review:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

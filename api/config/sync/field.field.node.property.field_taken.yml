@@ -1,0 +1,23 @@
+uuid: 4584794d-f335-4f0d-a11f-bddba0586552
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taken
+    - node.type.property
+id: node.property.field_taken
+field_name: field_taken
+entity_type: node
+bundle: property
+label: Taken
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 620ba1dc-b0f0-40d7-a09d-dd1cc86392b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_status
+    - node.type.property
+  module:
+    - options
+id: node.property.field_property_status
+field_name: field_property_status
+entity_type: node
+bundle: property
+label: 'Property Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: available
+default_value_callback: ''
+settings: {  }
+field_type: list_string

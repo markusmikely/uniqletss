@@ -1,0 +1,18 @@
+uuid: 85df4645-a355-454b-9167-3d1168245344
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_taken
+field_name: field_taken
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

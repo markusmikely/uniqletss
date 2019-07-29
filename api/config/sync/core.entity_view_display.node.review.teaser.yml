@@ -1,0 +1,30 @@
+uuid: ce296a7e-35a0-46cb-a15c-444406b880b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.review.field_contact
+    - field.field.node.review.field_email
+    - field.field.node.review.field_firstname
+    - field.field.node.review.field_lastname
+    - field.field.node.review.field_review
+    - node.type.review
+  module:
+    - user
+id: node.review.teaser
+targetEntityType: node
+bundle: review
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contact: true
+  field_email: true
+  field_firstname: true
+  field_lastname: true
+  field_review: true

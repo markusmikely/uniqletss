@@ -1,0 +1,62 @@
+uuid: 6811ce6f-1b82-45c6-990b-f1f91cb7ca58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_contact
+    - field.field.node.contact.field_contacttype
+    - field.field.node.contact.field_email
+    - field.field.node.contact.field_firstname
+    - field.field.node.contact.field_message
+    - node.type.contact
+  module:
+    - options
+    - user
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  field_contact:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contacttype:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_email:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_firstname:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_message:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

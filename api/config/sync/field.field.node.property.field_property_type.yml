@@ -1,0 +1,21 @@
+uuid: bd72eed7-a065-46cc-8d5b-f993696942b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_type
+    - node.type.property
+  module:
+    - options
+id: node.property.field_property_type
+field_name: field_property_type
+entity_type: node
+bundle: property
+label: 'Property Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

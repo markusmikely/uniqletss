@@ -1,0 +1,33 @@
+uuid: 1d336c4b-0fff-4512-9ccd-3d300490d9c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_price_type
+field_name: field_price_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Freehold
+      label: Freehold
+    -
+      value: Leasehold
+      label: Leasehold
+    -
+      value: 'Rental PCM'
+      label: 'Rental PCM'
+    -
+      value: 'Rental PW'
+      label: 'Rental PW'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

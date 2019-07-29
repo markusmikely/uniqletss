@@ -1,0 +1,28 @@
+uuid: 3d2c2b63-ff8b-484d-b4c9-d810e7621ed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slides
+    - node.type.homepage
+    - node.type.slide
+id: node.homepage.field_slides
+field_name: field_slides
+entity_type: node
+bundle: homepage
+label: Slides
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      slide: slide
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

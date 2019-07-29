@@ -1,0 +1,19 @@
+uuid: 66e4151b-c4a4-4511-8b78-0eca72aa7c55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.review
+id: node.review.field_contact
+field_name: field_contact
+entity_type: node
+bundle: review
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

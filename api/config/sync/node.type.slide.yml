@@ -1,0 +1,18 @@
+uuid: 86f57314-2372-40c2-b9b4-0cfb942384c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Slide
+type: slide
+description: 'Represent content type for a slide within a carousel'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

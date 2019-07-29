@@ -1,0 +1,7 @@
+uuid: 3552be95-1bbf-4a63-b7ea-a3b02076c212
+langcode: en
+status: true
+dependencies: {  }
+name: property
+label: Property
+effects: {  }

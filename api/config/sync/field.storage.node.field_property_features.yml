@@ -1,0 +1,57 @@
+uuid: 236a5f60-570d-4ade-8db6-a365c462c4aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_property_features
+field_name: field_property_features
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Communal Garden'
+      label: 'Communal Garden'
+    -
+      value: Balcony
+      label: Balcony
+    -
+      value: 'Private Garden'
+      label: 'Private Garden'
+    -
+      value: Patio
+      label: Patio
+    -
+      value: Driveway
+      label: Driveway
+    -
+      value: Garage
+      label: Garage
+    -
+      value: Gym
+      label: Gym
+    -
+      value: 'Parking Space'
+      label: 'Parking Space'
+    -
+      value: Pool
+      label: Pool
+    -
+      value: Spa
+      label: Spa
+    -
+      value: Elevator
+      label: Elevator
+    -
+      value: Porter
+      label: Porter
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

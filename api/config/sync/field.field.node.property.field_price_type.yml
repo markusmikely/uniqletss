@@ -1,0 +1,21 @@
+uuid: 6bd33e3f-7d7c-4e80-9858-d9f2d67b2e46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_type
+    - node.type.property
+  module:
+    - options
+id: node.property.field_price_type
+field_name: field_price_type
+entity_type: node
+bundle: property
+label: 'Price Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

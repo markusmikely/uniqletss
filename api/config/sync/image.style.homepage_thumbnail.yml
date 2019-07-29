@@ -1,0 +1,15 @@
+uuid: f13f3632-3293-4c85-a6cd-2969f42c6888
+langcode: en
+status: true
+dependencies: {  }
+name: homepage_thumbnail
+label: 'Homepage Thumbnail'
+effects:
+  dc8a6e62-c57d-440a-95a5-cee830e6be6e:
+    uuid: dc8a6e62-c57d-440a-95a5-cee830e6be6e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 250
+      anchor: center-center

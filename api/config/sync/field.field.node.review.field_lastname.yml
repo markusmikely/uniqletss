@@ -1,0 +1,19 @@
+uuid: 25bbcc1f-8ea8-49f5-8e7c-1be92f828074
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lastname
+    - node.type.review
+id: node.review.field_lastname
+field_name: field_lastname
+entity_type: node
+bundle: review
+label: Lastname
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

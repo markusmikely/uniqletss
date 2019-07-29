@@ -1,0 +1,20 @@
+uuid: 37338ef0-aa03-4401-8c01-3f4052d3d0c3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - materialize
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: materialize_page_title
+theme: materialize
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

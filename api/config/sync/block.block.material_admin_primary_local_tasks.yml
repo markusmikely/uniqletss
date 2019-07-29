@@ -1,0 +1,29 @@
+uuid: ca2509c5-968f-4b10-a9e0-60e6e4587515
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - material_admin
+_core:
+  default_config_hash: g1ozs3KrSC2ka2J_LBJlvs9xuZHJXrGWQg7f4lWJFx8
+id: material_admin_primary_local_tasks
+theme: material_admin
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs (Material Admin)'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }

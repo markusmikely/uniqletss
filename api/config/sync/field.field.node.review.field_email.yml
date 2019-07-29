@@ -1,0 +1,19 @@
+uuid: 02cd05da-4d7b-40d6-a96e-07e2211582b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.review
+id: node.review.field_email
+field_name: field_email
+entity_type: node
+bundle: review
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

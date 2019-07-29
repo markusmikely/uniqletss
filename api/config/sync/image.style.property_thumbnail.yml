@@ -1,0 +1,15 @@
+uuid: 37dcbd56-56f9-4cce-8d96-e7a9ff05e4d6
+langcode: en
+status: true
+dependencies: {  }
+name: property_thumbnail
+label: 'Property Thumbnail'
+effects:
+  7be4dcb2-d538-4848-84ee-c853fb989b3c:
+    uuid: 7be4dcb2-d538-4848-84ee-c853fb989b3c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 180
+      anchor: center-center

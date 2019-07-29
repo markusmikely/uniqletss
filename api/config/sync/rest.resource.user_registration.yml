@@ -1,0 +1,21 @@
+uuid: ac45c833-ca50-473d-823d-9b862263f55b
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - hal
+    - serialization
+    - user
+id: user_registration
+plugin_id: user_registration
+granularity: method
+configuration:
+  POST:
+    supported_formats:
+      - hal_json
+      - json
+      - xml
+    supported_auth:
+      - basic_auth
+      - cookie

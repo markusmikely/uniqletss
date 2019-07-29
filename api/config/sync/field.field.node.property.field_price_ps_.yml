@@ -1,0 +1,23 @@
+uuid: 20e2c0f5-de26-4137-9523-71f387b54c3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_ps_
+    - node.type.property
+id: node.property.field_price_ps_
+field_name: field_price_ps_
+entity_type: node
+bundle: property
+label: 'Price (£)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal
