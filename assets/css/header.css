@@ -26,7 +26,7 @@ a.navbar-brand img {
     width: auto;
 }
 .nav>li>a:focus, .nav>li>a:hover {
-    background: #0099fa;
+    background: #2a72bb;
     color: white;
 }
 span.icon-bar {

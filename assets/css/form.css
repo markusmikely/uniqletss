@@ -19,6 +19,16 @@ div.radio input ~ p label {
     padding: 0;
     margin-bottom: 5px;
 }
+form#sort-form {
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto 0;
+}
+form#sort-form * {
+  margin:0 !important;
+  color: white !important;
+  border-color: white !important;
+}
 div.radio input:checked ~ p label {
     position: relative;
 }
@@ -71,7 +81,7 @@ md-radio-button .md-label {
     margin-bottom: 20px  !important;
 }
 .md-button.md-default-theme.md-primary, .md-button.md-primary {
-    background: rgb(33,150,243);
+    background:#2a72bb;
     color: white;
     border-radius: 20px;
     padding: 0 20px;

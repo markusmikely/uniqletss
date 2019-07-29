@@ -6,7 +6,9 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
-
+use Drupal\Core\Entity;
+use \Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\node\Entity\Node;
 /**
  * Implements hook_help().
  */
@@ -32,4 +34,61 @@ function uniqletts_api_theme() {
       'render element' => 'children',
     ],
   ];
+}
+
+/**
+ * @file
+ * Implementation of hook_entity_view_alter();
+ */
+function uniqletts_api_node_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display, $view_mode) {
+  drupal_set_message($entity->bundle());
+  if($entity->bundle() == 'property') {
+    $build['view_on_frontend'] = [
+      '#markup' => '<a class="button" href="http://www.uniqletts.com/property/'.$entity->id().'" target="_blank">View On Website</a>',
+      '#weight' => '100'
+    ];
+  } else if($entity->bundle() == 'contact') {
+    drupal_set_message('foo bar');
+
+    $contact = Node::load($entity->id());
+    drupal_set_message('Email: '.$contact->get('field_email')->getValue()[0]['value']);
+
+    $build['reply_to_user'] = [
+      '#type' => 'form',
+      '#form_id' => 'reply',
+      '#weight' => "1000000",
+    ];
+    $build['reply_to_user']['title'] = [
+      '#markup' => '<h3>Reply to Customer</h3>',
+    ];
+    $build['reply_to_user']['subject'] = [
+      '#type' => 'textfield',
+      '#title'         => 'Subject',
+      '#value' => 'RE:',
+    ];
+    $build['reply_to_user']['message'] = [
+      '#type' => 'textarea',
+      '#title'=> 'Message',
+    ];
+    $build['reply_to_user']['email'] = [
+      '#type' => 'textfield',
+      '#title' => 'Email',
+      '#access' => FALSE,
+      '#value' => $contact->get('field_email')->getValue()[0]['value'],
+    ];
+    $build['reply_to_user']['submit'] = [
+      '#type' => 'button',
+      '#value' => 'Send Message',
+      '#submit' => ['uniqletts_api_send_message']
+    ];
+  }
+
+  function uniqletts_api_send_message($form, FormStateInterface $form_state) {
+
+    var_dump($form_state);
+    // mymodule_do_something($node);
+   \Drupal::logger(' mymodule')->notice('mymodule submit ') ;
+
+  }
+
 }

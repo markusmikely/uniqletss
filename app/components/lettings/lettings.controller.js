@@ -15,12 +15,12 @@ function LettingsController(PropertyService, $stateParams, $mdDialog, WishlistSe
   // Init
   (function initController() {
     vm.filter = $stateParams.filters;
-
+    vm.sortby = '-updated';
     vm.properties = [];
     vm.data = [];
     vm.pager =  {
         page: 1,
-        take: 10,
+        take: 30,
         maxSize: 11,
         activate: activate
     };
@@ -29,7 +29,7 @@ function LettingsController(PropertyService, $stateParams, $mdDialog, WishlistSe
 
   function processFilters() {
     if(vm.filter) {
-      return {
+      vm.filter = {
         'longtitude': (vm.filter.location) ? vm.filter.location.lng : undefined,
         'latitude': (vm.filter.location) ? vm.filter.location.lat : undefined,
         'distance': (vm.filter.distance) ? vm.filter.distance : undefined,
@@ -40,10 +40,9 @@ function LettingsController(PropertyService, $stateParams, $mdDialog, WishlistSe
         'bedrooms': (vm.filter.min_beds) ? vm.filter.min_beds : 0,
       }
     } else {
-      return {
-        'type': 'lettings'
-      };
+      vm.filter = {'type': 'lettings','sortby': 'updated'};
     }
+    return vm.filter;
   }
   function getLettings(filters) {
     vm.loading = true;
@@ -52,9 +51,14 @@ function LettingsController(PropertyService, $stateParams, $mdDialog, WishlistSe
 
     PropertyService.GetListings(queryString).then(function(response) {
       vm.data = response.data;
+      vm.data.sort((a, b) => (a.updated > b.updated) ? -1 : 1);
       vm.loading = false;
     });
   }
+
+
+
+
   function toggleWishlist(ev, property) {
     $mdDialog.show({
       controller: WishlistController,
@@ -86,17 +90,7 @@ function LettingsController(PropertyService, $stateParams, $mdDialog, WishlistSe
     return queryString;
   }
   function search() {
-    var filters = {
-      'longtitude': vm.filter.location.lng,
-      'latitude': vm.filter.location.lat,
-      'distance': vm.filter.distance,
-      'min_price': vm.filter.price.min,
-      'max_price': vm.filter.price.max,
-      'property_type': vm.filter.property_type,
-      'type': 'lettings',
-      'bedrooms': vm.filter.rooms,
-    }
-    this.getLettings(filters);
+    this.getLettings(vm.filter);
   }
   function activate(page, take) {
     vm.pager.page = page;

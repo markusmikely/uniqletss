@@ -54,15 +54,30 @@ section#about-services .card h4 {
     background: rgba(113, 168, 208, .8);
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 .bg-transparent-darkblue {
     background: rgba(65, 123, 193, .8);
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
+}
+p.header-p {
+    text-transform: uppercase;
+    font-size: 24px !important;
+    line-height: 40px;
+    margin: 30px auto !important;
+    padding: 0 20px;
 }
 
+ul.header-ul {
+    margin: 30px 0;
+}
+
+ul.header-ul h4 {
+    text-transform: uppercase;
+    font-weight: 100 !important;
+}
 .bg-transparent-lightblue h1,
 .bg-transparent-lightblue h2,
 .bg-transparent-darkblue h2 {

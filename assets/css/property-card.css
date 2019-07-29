@@ -31,14 +31,24 @@ section#features .property-short-description {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: white;
     border-radius: 50%;
     padding: 5px;
     text-align: center;
     width: 36px;
     height: 36px;
-    border: 1px solid #FFD700;
+    border: 1px solid #f8f8f8;
 }
+.favourite a svg path {
+    fill: #f8f8f8;
+}
+.favourite a.no-image {
+    border: 1px solid #b4bbbf;
+}
+
+.favourite a.no-image svg path {
+  fill: #b4bbbf;
+}
+
 .favourite a i.icon.icon-heart {
   position: absolute;
   top: 50%;
@@ -117,10 +127,6 @@ section#features .property-short-description {
 
 .property-short-description {
   min-height: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 10px 15px;
   margin-bottom: 40px;
 }
@@ -157,17 +163,19 @@ section.listing .container {
 }
 
 .media.property-item {
-    margin-bottom: 30px;
-    clear: both;
-    border-bottom:10px solid #f8f8f8;
-    padding-bottom:30px
+  margin-bottom: 15px;
+  clear: both;
+  border-bottom: 2px solid #f8f8f8;
+  padding-bottom: 15px;
 }
 
 .media-body h4 {
     font-size: 18px;
     line-height: 1.4;
 }
-
+md-chips.md-default-theme .md-chips, md-chips .md-chips {
+    box-shadow: none;
+}
 div#property-filter {
     background: rgba(30,136,229,.7) !important;
     color: white;

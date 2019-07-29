@@ -12,12 +12,12 @@
   <span class="back-drop ng-hide-animate" ng-click="vm.menu = !vm.menu" ng-show="vm.menu" ng-class="{'show': vm.menu}"></span>
   <nav class="collapse navbar-collapse" id="main-navbar"  ng-class="{'open':vm.menu}">
       <ul class="nav navbar-nav pull-right">
-        <li><a ui-sref="about" ng-click="vm.menu = !vm.menu">About</a></li>
-        <li><a ui-sref="sales" ng-click="vm.menu = !vm.menu">Sales</a></li>
-        <li><a ui-sref="lettings" ng-click="vm.menu = !vm.menu">Lettings</a></li>
-        <li><a ui-sref="management" ng-click="vm.menu = !vm.menu">Management</a></li>
-        <li><a ui-sref="block-management" ng-click="vm.menu = !vm.menu">Block Management</a></li>
-        <li><a ui-sref="contact" ng-click="vm.menu = !vm.menu">Contact</a></li>
+        <li ng-class="{'active': vm.state.includes('about')}"><a ui-sref="about" ng-click="vm.menu = !vm.menu">About</a></li>
+        <li ng-class="{'active': vm.state.includes('sales')}"><a ui-sref="sales" ng-click="vm.menu = !vm.menu">Sales</a></li>
+        <li ng-class="{'active': vm.state.includes('lettings')}"><a ui-sref="lettings" ng-click="vm.menu = !vm.menu">Lettings</a></li>
+        <li ng-class="{'active': vm.state.includes('management')}"><a ui-sref="management" ng-click="vm.menu = !vm.menu">Management</a></li>
+        <li ng-class="{'active': vm.state.includes('block-management')}"><a ui-sref="block-management" ng-click="vm.menu = !vm.menu">Block Management</a></li>
+        <li ng-class="{'active': vm.state.includes('contact')}"><a ui-sref="contact" ng-click="vm.menu = !vm.menu">Contact</a></li>
       </ul>
   </nav>
 

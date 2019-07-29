@@ -1,8 +1,9 @@
-HeaderController.$inject = [];
-function HeaderController() {
+HeaderController.$inject = ['$state'];
+function HeaderController($state) {
 
   var vm = this;
 
+  vm.state = $state;
   vm.menu = false;
   vm.toggleMenu =  toggleMenu;
 

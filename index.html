@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="assets/css/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="icon" type="image/x-icon" id="favicon" href="assets/img/favicon.ico">  
+  <link rel="icon" type="image/x-icon" id="favicon" href="assets/img/favicon.ico">
 
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <!-- jQUery & bootstrap  -->
@@ -34,8 +34,8 @@
 <!-- Angular Material Library -->
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js">
   <!-- Angular Material Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.1.0/angular-cookie.min.js"></script>
   <script src="assets/js/ng-responsive-image.min.js"></script>
   <script src="assets/js/picturefill.min.js"></script>
@@ -73,12 +73,13 @@
   <script src="app/run.js"></script>
   <script src="app/config.js"></script>
   <script src="app/app.js"></script>
+  <base href="/uniqletss/" />
 </head>
 <body ng-app="uniqlettsApp">
   <!-- Header -->
   <div ng-include src="'app/components/layout/header/header.view.htm'"></div>
   <!-- Content -->
-  <div id="ui-view" ui-view autoscroll="true"></div>
+  <div id="ui-view" ui-view></div>
   <!-- Footer -->
   <div id="footer-wrapper" ng-include src="'app/components/layout/footer/footer.view.htm'"></div>
 <!-- Wishlist {{wishlist}} -->

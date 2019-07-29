@@ -62,11 +62,11 @@
 .icon-bathroom {
   background-image: url(../img/bathroom.svg);
 }
-.favourite a, .favourite a * {
-    transition: all linear .3s;
-}
 .favourite a:hover svg * {
     fill: #2973ba;
+}
+html > body .favourite * {
+    transition: none;
 }
 .favourite a:hover, .favourite.in-wishlist a  {
     border-color: #2973ba;

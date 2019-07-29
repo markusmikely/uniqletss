@@ -63,7 +63,7 @@ $mdThemingProvider
   };
   var lettingsState = {
     name: 'lettings',
-    url: '/lettings{filters:json}',
+    url: '/lettings',
     params: {filters: null},
     templateUrl: 'app/components/lettings/lettings.view.htm',
     data : {
@@ -204,4 +204,6 @@ $mdThemingProvider
   $stateProvider.state(cookiesState);
   $stateProvider.state(propertyState);
   $stateProvider.state(managementState);
+
+  $locationProvider.html5Mode(true);
 };

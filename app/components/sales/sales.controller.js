@@ -15,7 +15,7 @@ function SalesController(PropertyService, $stateParams, $mdDialog, WishlistServi
   // Init
   (function initController() {
     vm.filter = $stateParams.filters;
-
+    vm.sortby = '-updated';
     vm.properties = [];
     vm.data = [];
     vm.pager =  {
@@ -29,7 +29,7 @@ function SalesController(PropertyService, $stateParams, $mdDialog, WishlistServi
 
   function processFilters() {
     if(vm.filter) {
-      return {
+      vm.filter = {
         'longtitude': (vm.filter.location) ? vm.filter.location.lng : undefined,
         'latitude': (vm.filter.location) ? vm.filter.location.lat : undefined,
         'distance': (vm.filter.distance) ? vm.filter.distance : undefined,
@@ -40,10 +40,9 @@ function SalesController(PropertyService, $stateParams, $mdDialog, WishlistServi
         'bedrooms': (vm.filter.min_beds) ? vm.filter.min_beds : 0,
       }
     } else {
-      return {
-        'type': 'sales'
-      };
+      vm.filter = {'type': 'sales','sortby': 'updated'};
     }
+    return vm.filter;
   }
   function getSales(filters) {
     vm.loading = true;
@@ -52,6 +51,7 @@ function SalesController(PropertyService, $stateParams, $mdDialog, WishlistServi
 
     PropertyService.GetListings(queryString).then(function(response) {
       vm.data = response.data;
+      vm.data.sort((a, b) => (a.updated > b.updated) ? 1 : -1);
       vm.loading = false;
     });
   }

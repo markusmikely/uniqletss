@@ -89,20 +89,22 @@ class PropertyAPIController extends ControllerBase {
           'town' => $n->get('field_address')->getValue()[0]['locality'],
           'postcode' => $n->get('field_address')->getValue()[0]['postal_code']
       );
-      
+
       $property = array(
         'id' => $n->id(),
         'title' => $n->getTitle(),
         'short_description' => $n->get('field_short_description')->getValue()[0]['value'],
         'description' => $n->get('field_description')->getValue()[0],
         'images' => $images,
-        'price' => $n->get('field_price_ps_')->getValue()[0]['value'],
+        'price' => floatval($n->get('field_price_ps_')->getValue()[0]['value']),
         'price_type' => $n->get('field_price_type')->getValue()[0]['value'],
         'address' =>  $address,
         'distance' => -1,
         'features' =>  $features,
+        'featured' => intval($n->get('field_featured')->getValue()[0]['value']),
         'bedrooms' =>  $n->get('field_bedrooms')->getValue()[0]['value'],
         'bathrooms' =>  $n->get('field_bathrooms')->getValue()[0]['value'],
+        'status' =>  $n->get('field_property_status')->getValue()[0]['value'],
         'coordinates' => array(
           'latitude' => -1,
           'longtitude' =>  -1,

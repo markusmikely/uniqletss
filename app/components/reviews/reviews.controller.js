@@ -12,84 +12,19 @@ function ReviewsController() {
 
   function getReviews() {
     vm.reviews = [{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 2,
-    },{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 5,
-    }, {
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 3,
-    },{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 1,
-    }, {
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
+      'username': 'Virag Lorincz',
+      'date': '2 months ago',
+      'review': 'Excellent service reasonably priced. Cut out ‘The middle man’<br>As landlords we have used Uniqletts agents since we first started in 2012. We have never been disappointed with their service, always excellent and great value for money. Like that there is a choice of how much you want them to do, can chose from basic to gold standard depending on how much you want to pay.',
       'rating': 5,
     },{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 4,
-    }, {
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 2,
-    },{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 4,
-    }, {
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 4,
-    },{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
+      'username': 'MD MUKTAR ALI',
+      'date': '2 months ago',
+      'review': 'Great Service at a very low cost<br>Very cheap alternative to brick and online estate agents. Easy to use. Staff friendly and helpful. Requests dealt with promptly and pleasantly. Excellent service. I would recommend to anyone and use again without hesitation.',
       'rating': 5,
     }, {
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 1,
-    },{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 2,
-    }, {
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 5,
-    },{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 4,
-    }, {
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
-      'rating': 5,
-    },{
-      'username': 'John Doe',
-      'date': '18/10/1984',
-      'review': 'I have been contacting letting agents in Camden and was aware it would be difficult to find a property that allows pets. I had experienced rude letting agents in other businesses when I mentioned dog friendly property so was nervous calling up Foxtons in case the response was the same. Narada took the call when I phoned and was extremely professional, unbiased and non-judgemental, he made me aware that flats with dogs are few and far between but was extremely helpful and made me feel at ease. He deserves to be commended for his great customer service and going above and beyond, explaining things clearly and trying his best to help me out. Although I am still in the very early stages of looking for a property, this experience gave me confidence that there may be a chance I can get the property I am looking for with the help of Foxtons.',
+      'username': 'Markus Mikely',
+      'date': '6 months ago',
+      'review': 'Friendly and welcoming staff, with great local knowledge and property expertise. They were very quick and efficient with my property needs. Uniqletts helped moving home be a smooth and easy experience. Will be definitely recommending them to friends and family',
       'rating': 3,
     }];
   }
